@@ -1,0 +1,184 @@
+<svg width="800" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+
+    <!-- Flower shape -->
+    <g id="flower1">
+      <ellipse cx="0" cy="-5" rx="4" ry="7" fill="#f7c5d8" opacity="0.9"/>
+      <ellipse cx="0" cy="-5" rx="4" ry="7" fill="#f7c5d8" opacity="0.9" transform="rotate(60)"/>
+      <ellipse cx="0" cy="-5" rx="4" ry="7" fill="#f7c5d8" opacity="0.9" transform="rotate(120)"/>
+      <ellipse cx="0" cy="-5" rx="4" ry="7" fill="#f7c5d8" opacity="0.9" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-5" rx="4" ry="7" fill="#f7c5d8" opacity="0.9" transform="rotate(240)"/>
+      <ellipse cx="0" cy="-5" rx="4" ry="7" fill="#f7c5d8" opacity="0.9" transform="rotate(300)"/>
+      <circle cx="0" cy="0" r="4" fill="#fde8a0"/>
+    </g>
+
+    <g id="flower2">
+      <ellipse cx="0" cy="-4" rx="3" ry="6" fill="#d4b8e8" opacity="0.9"/>
+      <ellipse cx="0" cy="-4" rx="3" ry="6" fill="#d4b8e8" opacity="0.9" transform="rotate(60)"/>
+      <ellipse cx="0" cy="-4" rx="3" ry="6" fill="#d4b8e8" opacity="0.9" transform="rotate(120)"/>
+      <ellipse cx="0" cy="-4" rx="3" ry="6" fill="#d4b8e8" opacity="0.9" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-4" rx="3" ry="6" fill="#d4b8e8" opacity="0.9" transform="rotate(240)"/>
+      <ellipse cx="0" cy="-4" rx="3" ry="6" fill="#d4b8e8" opacity="0.9" transform="rotate(300)"/>
+      <circle cx="0" cy="0" r="3" fill="#fde8a0"/>
+    </g>
+
+    <g id="flower3">
+      <ellipse cx="0" cy="-4" rx="3" ry="6" fill="#b8dfc8" opacity="0.9"/>
+      <ellipse cx="0" cy="-4" rx="3" ry="6" fill="#b8dfc8" opacity="0.9" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-4" rx="3" ry="6" fill="#b8dfc8" opacity="0.9" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-4" rx="3" ry="6" fill="#b8dfc8" opacity="0.9" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-4" rx="3" ry="6" fill="#b8dfc8" opacity="0.9" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="3" fill="#fde8a0"/>
+    </g>
+
+    <g id="flower4">
+      <ellipse cx="0" cy="-5" rx="4" ry="7" fill="#f7b8c8" opacity="0.85"/>
+      <ellipse cx="0" cy="-5" rx="4" ry="7" fill="#f7b8c8" opacity="0.85" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-5" rx="4" ry="7" fill="#f7b8c8" opacity="0.85" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-5" rx="4" ry="7" fill="#f7b8c8" opacity="0.85" transform="rotate(270)"/>
+      <circle cx="0" cy="0" r="4" fill="#fff0a0"/>
+    </g>
+
+    <g id="flower5">
+      <ellipse cx="0" cy="-3" rx="2.5" ry="5" fill="#c8d8f8" opacity="0.9"/>
+      <ellipse cx="0" cy="-3" rx="2.5" ry="5" fill="#c8d8f8" opacity="0.9" transform="rotate(60)"/>
+      <ellipse cx="0" cy="-3" rx="2.5" ry="5" fill="#c8d8f8" opacity="0.9" transform="rotate(120)"/>
+      <ellipse cx="0" cy="-3" rx="2.5" ry="5" fill="#c8d8f8" opacity="0.9" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-3" rx="2.5" ry="5" fill="#c8d8f8" opacity="0.9" transform="rotate(240)"/>
+      <ellipse cx="0" cy="-3" rx="2.5" ry="5" fill="#c8d8f8" opacity="0.9" transform="rotate(300)"/>
+      <circle cx="0" cy="0" r="2.5" fill="#fde8a0"/>
+    </g>
+  </defs>
+
+  <!-- FALLING FLOWERS — each uses animateTransform for fall + spin + sway -->
+
+  <!-- Row 1 of flowers -->
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="60,-20; 75,240" dur="6s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="6s" repeatCount="indefinite" begin="0s"/>
+    <use href="#flower1" transform="scale(1.1)">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="6s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="180,-15; 160,240" dur="7s" repeatCount="indefinite" begin="1s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="7s" repeatCount="indefinite" begin="1s"/>
+    <use href="#flower2" transform="scale(1.2)">
+      <animateTransform attributeName="transform" type="rotate" values="0;-360" dur="7s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="320,-10; 340,240" dur="8s" repeatCount="indefinite" begin="0.5s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="8s" repeatCount="indefinite" begin="0.5s"/>
+    <use href="#flower3" transform="scale(1.0)">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="8s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="460,-18; 445,240" dur="6.5s" repeatCount="indefinite" begin="2s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="6.5s" repeatCount="indefinite" begin="2s"/>
+    <use href="#flower4" transform="scale(0.9)">
+      <animateTransform attributeName="transform" type="rotate" values="0;-360" dur="6.5s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="600,-12; 620,240" dur="7.5s" repeatCount="indefinite" begin="0.8s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="7.5s" repeatCount="indefinite" begin="0.8s"/>
+    <use href="#flower1" transform="scale(0.8)">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="7.5s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="740,-8; 760,240" dur="9s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="9s" repeatCount="indefinite" begin="1.5s"/>
+    <use href="#flower5" transform="scale(1.1)">
+      <animateTransform attributeName="transform" type="rotate" values="0;-360" dur="9s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <!-- Row 2 - offset timing -->
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="100,-20; 85,240" dur="8s" repeatCount="indefinite" begin="3s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="8s" repeatCount="indefinite" begin="3s"/>
+    <use href="#flower3" transform="scale(0.85)">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="8s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="250,-15; 265,240" dur="7s" repeatCount="indefinite" begin="3.5s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="7s" repeatCount="indefinite" begin="3.5s"/>
+    <use href="#flower4" transform="scale(1.1)">
+      <animateTransform attributeName="transform" type="rotate" values="0;-360" dur="7s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="390,-10; 375,240" dur="6s" repeatCount="indefinite" begin="4s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="6s" repeatCount="indefinite" begin="4s"/>
+    <use href="#flower2" transform="scale(0.9)">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="6s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="530,-18; 545,240" dur="8.5s" repeatCount="indefinite" begin="2.5s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="8.5s" repeatCount="indefinite" begin="2.5s"/>
+    <use href="#flower5" transform="scale(1.2)">
+      <animateTransform attributeName="transform" type="rotate" values="0;-360" dur="8.5s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="670,-12; 655,240" dur="7s" repeatCount="indefinite" begin="4.5s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="7s" repeatCount="indefinite" begin="4.5s"/>
+    <use href="#flower1" transform="scale(1.0)">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="7s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <!-- Row 3 - more offset -->
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="40,-20; 55,240" dur="9s" repeatCount="indefinite" begin="5s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="9s" repeatCount="indefinite" begin="5s"/>
+    <use href="#flower4" transform="scale(0.8)">
+      <animateTransform attributeName="transform" type="rotate" values="0;-360" dur="9s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="210,-14; 195,240" dur="6.5s" repeatCount="indefinite" begin="5.5s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="6.5s" repeatCount="indefinite" begin="5.5s"/>
+    <use href="#flower5" transform="scale(0.95)">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="6.5s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="560,-16; 575,240" dur="7.5s" repeatCount="indefinite" begin="0.3s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="7.5s" repeatCount="indefinite" begin="0.3s"/>
+    <use href="#flower3" transform="scale(1.1)">
+      <animateTransform attributeName="transform" type="rotate" values="0;-360" dur="7.5s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <g opacity="0.0">
+    <animateTransform attributeName="transform" type="translate" values="710,-10; 725,240" dur="8s" repeatCount="indefinite" begin="1.2s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="8s" repeatCount="indefinite" begin="1.2s"/>
+    <use href="#flower2" transform="scale(0.85)">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="8s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <!-- NAME TEXT -->
+  <text x="400" y="118" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="400" fill="#b080c8" text-anchor="middle" letter-spacing="4" opacity="0.95">Vanessa Ramirez</text>
+
+  <!-- SUBTITLE TEXT -->
+  <text x="400" y="152" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#c0a0d8" text-anchor="middle" letter-spacing="3" opacity="0.85">Backend Engineer  ·  ML / AI</text>
+
+</svg>
