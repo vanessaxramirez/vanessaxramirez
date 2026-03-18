@@ -19,7 +19,7 @@
 <!-- ABOUT ME -->
 <div align="center">
 
-**` whoami `**
+### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
 
 </div>
 
@@ -36,13 +36,7 @@
 ├─────────────────────────────────────────────────────┤
 │                                                     │
 │  CS student at Santa Monica College, transferring   │
-│  Spring 2026. Snap Engineering Scholar (top 5%),    │
-│  full-stack developer, and DSA instructor for       │
-│  130+ students.                                     │
-│                                                     │
-│  I build cross-platform apps, teach recursive       │
-│  algorithms, and co-founded a student org           │
-│  bridging students and the tech industry.           │
+│  Fall 202                                           │
 │                                                     │
 │  Off-screen: bouldering, hiking, baseball, and      │
 │  building Metal Earth models piece by piece.        │
@@ -64,9 +58,9 @@
 <br/>
 
 <!-- TECH STACK -->
-<div align="center">
+<div align="left">
 
-**` stack `**
+**` Languages and Tools `**
 
 <br/>
 
