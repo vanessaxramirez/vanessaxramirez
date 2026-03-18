@@ -86,11 +86,11 @@
 <br/>
 
 <!-- GITHUB STATS -->
-<div align="center">
+<div align="left">
 
-**` stats `**
+### Stats
 <br/>
-
+<div align="center">
 <img src="https://github-readme-stats.vercel.app/api?username=vanessaxramirez&show_icons=true&hide_border=true&title_color=c084fc&icon_color=e879f9&text_color=e2d9f3&bg_color=1a0a2e" height="158"/>
 &nbsp;&nbsp;
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vanessaxramirez&layout=compact&hide_border=true&title_color=c084fc&text_color=e2d9f3&bg_color=1a0a2e" height="158"/>
@@ -99,6 +99,7 @@
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=vanessaxramirez&hide_border=true&ring=e879f9&fire=f472b6&currStreakLabel=c084fc&background=1a0a2e&stroke=7c3aed&dates=a78bfa&sideLabels=c084fc&currStreakNum=e879f9&sideNums=e879f9" />
 
+</div>
 </div>
 <br/>
 <div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=7c3aed&height=2&width=60%25" /></div>
@@ -110,11 +111,6 @@
   <img alt="contribution snake" src="https://raw.githubusercontent.com/vanessaxramirez/vanessaxramirez/output/github-contribution-grid-snake.svg">
 </picture>
 
-<br/>
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=7c3aed&height=2&width=60%25" /></div>
-<br/>
-
-<br/>
 
 <!-- CONNECT -->
 <div align="left">
